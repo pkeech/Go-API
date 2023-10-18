@@ -1,0 +1,34 @@
+## DEFINE VERSION
+version: '3.4'
+
+## DEFINE SERVICES
+services:
+  api:
+    image: golang:1.21.3-bookworm 
+    working_dir: /app
+    environment:
+      ENV: "DEVELOPMENT"
+    volumes:
+      - ./:/app
+    networks:
+      - demo-go
+    ports:
+      - 8080:8080
+  db:
+    image: postgres:16.0-bookworm
+    environment:
+      POSTGRES_PASSWORD: "MyPassword"
+    volumes:
+      - PG_DATA:/var/lib/postgresql/data
+    networks:
+      - demo-go
+    ports:
+      - 5432:5432
+
+## DEFINE VOLUMES
+volumes:
+  PG_DATA:
+
+## DEFINE NETWORK
+networks:
+  demo-go:
