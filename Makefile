@@ -1,8 +1,8 @@
 build:
-	@go build -o bin/godemo 
+	@go build -o bin/goapi
 
 run: build
-	@./bin/godemo
+	@./bin/goapi
 
 test:
 	@go test -v ./...
