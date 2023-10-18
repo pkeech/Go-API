@@ -1,5 +1,6 @@
-## IGNORE VS CODE FILES
-.vscode
+## IGNORE VS CODE FILES EXCEPT EXTENSIONS
+.vscode/*
+!.vscode/extensions.json
 
 ## IGNORE MAC FILES
 .DS_STORE

@@ -11,7 +11,7 @@ services:
     volumes:
       - ./:/app
     networks:
-      - demo-go
+      - go-api
     ports:
       - 8080:8080
   db:
@@ -21,14 +21,24 @@ services:
     volumes:
       - PG_DATA:/var/lib/postgresql/data
     networks:
-      - demo-go
+      - go-api
     ports:
       - 5432:5432
+  redis:
+    image: redis:7.2.1-bookworm
+    #environment:      
+    volumes:
+      - REDIS_DATA:/data
+    networks:
+      - go-api
+    ports:
+      - 6379:6379
 
 ## DEFINE VOLUMES
 volumes:
   PG_DATA:
+  REDIS_DATA:
 
 ## DEFINE NETWORK
 networks:
-  demo-go:
+  go-api:

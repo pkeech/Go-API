@@ -1,0 +1,9 @@
+{
+    "recommendations": [
+        "cweijan.vscode-redis-client",
+        "ms-azuretools.vscode-docker",
+        "rangav.vscode-thunder-client",
+        "ms-vscode.makefile-tools",
+        "golang.go"
+    ]
+}
