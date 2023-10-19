@@ -10,7 +10,7 @@ import (
 )
 
 func main() {
-	app := application.New()
+	app := application.New(application.LoadConfig())
 
 	// CREATE CONTEXT TO HANDLE GRACEFUL SHUTDOWNS
 	// OS.INTERRUPT == SIGINIT

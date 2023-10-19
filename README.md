@@ -15,6 +15,7 @@ make run
 ### References
 The following references were used;
 
+- [https://www.youtube.com/watch?v=wpnN3RIRSxs&list=RDCMUCW5YeuERMmlnqo4oq8vwUpg&index=2](https://www.youtube.com/watch?v=wpnN3RIRSxs&list=RDCMUCW5YeuERMmlnqo4oq8vwUpg&index=2)
 - [https://hub.docker.com/_/golang](https://hub.docker.com/_/golang)
 - [https://www.youtube.com/watch?v=Yi9e0DAHY6Y&list=PLujhHB_uAFJws6Vv5q1KDoaQ4YcpS9UOm&index=35](https://www.youtube.com/watch?v=Yi9e0DAHY6Y&list=PLujhHB_uAFJws6Vv5q1KDoaQ4YcpS9UOm&index=35)
 - [https://medium.com/@jitenderkmr/building-scalable-micro-services-with-go-golang-and-chi-framework-6db5f2f9ad28](https://medium.com/@jitenderkmr/building-scalable-micro-services-with-go-golang-and-chi-framework-6db5f2f9ad28)
